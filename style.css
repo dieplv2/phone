@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: #1111;
+}
 ul {
     list-style: none;
 }
@@ -319,11 +322,18 @@ a {
 .footer {
     padding: 20px 0;
     text-align: center;
+    background-color: #1111;
+}
+
+.footer-list {
+    background-color: #1111;
+    padding: 20px;
 }
 
 .footer-item {
     width: 50%;
     opacity: .8;
+    overflow: hidden;
 }
 
 .footer-item img {
@@ -429,7 +439,6 @@ a {
     .nav-list.reponsive {
         position: absolute;
         text-align: center;
-        background-color: #000;
         opacity: .8;
         display: block;
         top: 100%;
