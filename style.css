@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-color: #1111;
-}
+
 ul {
     list-style: none;
 }
@@ -34,16 +32,19 @@ a {
 }
 
 .nav-list, .logo, .icon{
-    color: #000;
+    color: #111;
     padding: 12px 24px;
     font-weight: 600;
     font-size: 1.3em;
-    opacity: .9;
+    opacity: .8;
     justify-content: space-between;
+}
+.nav-list li a {
+    line-height: 35px;
 }
 .icon {
     display: none;
-
+    line-height: 40px;
 }
 
 .nav-list li:hover a {
