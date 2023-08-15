@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" integrity="sha512-9YHSK59/rjvhtDcY/b+4rdnl0V4LPDWdkKceBl8ZLF5TB6745ml1AfluEU6dFWqwDw9lPvnauxFgpKvJqp7jiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
     <title>Document</title>
 </head>
 
@@ -17,15 +20,26 @@
                     <img src="https://fpt.vn/assets/images/fpt-logo.svg" alt="">
                 </div>
                 <ul class="nav-list flex" id="navtop">
-                    <li><a href="tel:0961232585">Home</a></li>
-                    <li><a href="tel:0961232585">About</a></li>
-                    <li><a href="tel:0961232585">Sevice</a></li>
-                    <li><a href="tel:0961232585">Concat</a></li>
-                    <li><a href="tel:0961232585">Product</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Sevice</a></li>
+                    <li><a href="">Concat</a></li>
+                    <li><a href="">Product</a></li>
                 </ul>
-                <div class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+
+                <div class="store"><a href=""><i class="fas fa-store"><sup>1</sup></i></a></div>
+
+                <div class="icon" onclick="document.getElementById('mobile').style.display = 'block'">
+                    <i class="fas fa-bars"></i>
                 </div>
+            </div>
+            <div class="mobile" id="mobile">
+                <span onclick="document.getElementById('mobile').style.display = 'none'"><i class="fas fa-times"></i></span>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Sevice</a>
+                <a href="">Concat</a>
+                <a href="">Product</a>
             </div>
         </div>
 
@@ -41,96 +55,284 @@
             </div>
         </div> 
 
-        <div class="cart-product">
-            <div class="container">
-                <h2 id="page-title">Cáp quang gia đình</h2>
-                <ul class="cart flex" id="cart">
-                    <li class="fade">
-                        <a href="tel:0961232585">
-                            <img src="https://fpt.vn/assets/images/fpt-logo.svg" alt="">
-                            <h3>Giga</h3>
-                            <div class="speed">150Mbps</div>
-                            <h1>195.000 <sub>/tháng</sub></h1>
-                            <p> * Khách hàng đóng 6 tháng tặng thêm một tháng <br>
-                                * Khách hàng đóng 12 tháng tặng thêm 2 tháng <br>
-                                *<span style="color: red;"> Phi hòa mạng 300k </span><br>
-                                * Modem băng tần 2.4 và 5G <br>
-                                * Lắp đặt nhanh trong 24h <br>
-                            </p>
+        <!--  -->
+        <div class="subDetail">
+            <a href="">Home</a> /
+            <a href="">category</a> /
+            <a href="">title</a> /
+        </div>
+        
+        <div class="detail">
+            <div class="container detail--container">
+                <div class="left">
+                    <!-- big -->
+                    <div class="left--big--img">
+                        <img id="bigImg" src="./img/1 (4).jpg" alt="">
+                    </div>
+                    <!-- Small -->
+                    <div class="left--small--img" id="smallImg">
+                        <img src="./img/1 (1).jpg" alt="">
+                        <img src="./img/1 (2).jpg" alt="">
+                        <img src="./img/1 (3).jpg" alt="">
+                        <img src="./img/1 (5).jpg" alt="">
+                        <img src="./img/1 (1).jpg" alt="">
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="right">
+                    
+                    <div class="detail--price"> Giá tiền: <h1>990.000 vnđ</h1></div>
 
-                            <button>0961.232.585</button>
-                        </a>
-                       
-                    </li>
-                    <li class="fade">
-                        <a href="tel:0961232585">
-                            <img src="https://fpt.vn/assets/images/fpt-logo.svg" alt="">
-                            <h3>Sky</h3>
-                            <div class="speed">1Gb</div>
-                            <h1>215.000 <sub>/tháng</sub></h1>
-                            <p> * Khách hàng đóng 6 tháng tặng thêm một tháng <br>
-                                * Khách hàng đóng 12 tháng tặng thêm 2 tháng <br>
-                                *<span style="color: red;"> Phi hòa mạng 300k </span><br>
-                                * Tốc độ 1BG tùy vào thiết bị <br>
-                                * Lắp đặt nhanh trong 24h <br>
-                            </p>
+                    <div class="detail--sale"><s>1230.000 vnđ</s></div>
+                    <div class="detail--status">Còn Hàng</div>
+                    <div class="detail--customer">Bảo hành: 12 tháng</div>
+                    <div class="detail--similar">
+                       <div>
+                           <input type="radio"> cam 1
+                            <label for="">1320.000</label>
+                        </div>
 
-                            <button>0961.232.585</button>
-                        </a>
-                      
-                    </li>
-                    <li class="fade">
-                        <a href="tel:0961232585">
-                            <img src="https://fpt.vn/assets/images/fpt-logo.svg" alt="">
-                            <h3>Meta</h3>
-                            <div class="speed">1Gb</div>
-                            <h1>300.000 <sub>/tháng</sub></h1>
-                            <p> * Khách hàng đóng 6 tháng tặng thêm một tháng <br>
-                                * Khách hàng đóng 12 tháng tặng thêm 2 tháng <br>
-                                *<span style="color: red;"> Phi hòa mạng 300k </span><br>
-                                * Tốc độ 1BG tùy vào thiết bị <br>
-                                * Lắp đặt nhanh trong 24h <br>
-                            </p>
+                        <div>
+                            <input type="radio"> cam 2
+                            <label for="">1590.000</label>
+                        </div>
 
-                            <button>0961.232.585</button>
-                        </a>
-                       
-                    </li>
-                    <li class="fade">
-                        <a href="tel:0961232585">
-                            <img src="https://fpt.vn/assets/images/fpt-logo.svg" alt="">
-                            <h3>Supper100</h3>
-                            <div class="speed">100Mbps</div>
-                            <h1>170.000<sub>/tháng</sub></h1>
-                            <p> * Khách hàng đóng 6 tháng tặng thêm một tháng <br>
-                                * Khách hàng đóng 12 tháng tặng thêm 2 tháng <br>
-                                *<span style="color: red;"> Phi hòa mạng 300k </span><br>
-                                * Modem băng tần 2.4 và 5G <br>
-                                * Lắp đặt nhanh trong 24h <br>
-                            </p>
+                        <div>
+                            <input type="radio"> cam 3
+                            <label for="">2200.000</label>
+                        </div>
+                        
+                    </div>
 
-                            <button>0961.232.585</button>
-                        </a>
-                      
-                    </li>
-                </ul>
-                <button class="prev-cart" onclick="plusCarts(-1)">❮</button>
-                <button class="next-cart" onclick="plusCarts(1)">❯</button>
+                    <ul class="detail--desc">
+                        <li>Tặng Công Lắp Đặt Trong 20km Trị Giá 100.000đ</li>
+                        <li>Tặng Công Lắp Đặt Trong 20km Trị Giá 100.000đ</li>
+                        <li>Tặng Công Lắp Đặt Trong 20km Trị Giá 100.000đ</li>
+                        <li>Tặng Công Lắp Đặt Trong 20km Trị Giá 100.000đ</li>
+                        <li>Tặng Công Lắp Đặt Trong 20km Trị Giá 100.000đ</li>
+                    </ul>
 
-                <div class="desc">
-                    <p>
-                        Chúng tôi không phải là sự lựa chọn duy nhất và tốt nhất với tất cả khách hàng,
-                        nhưng nếu được lựa chọn Khách Hàng sẽ là lựa chọn duy nhất để được phụ vụ với chúng tôi,
-                        các bạn hãy đưa ra nhu cầu chúng tôi sẽ là người thực hiện nó
+                    <a href="" class="btn buy">Mua ngay
+                        <small>Gia hàng tan toi và lắp đặt trong ngày
+                        </small>
+                    </a>
 
-                    </p>
+                    <a href="" class="btn phone">0981.232.565</a>
                 </div>
             </div>
+        </div>
+        <!-- end detail -->
+        <div class="subTitle">
+            <h2>Cáp quang cá nhân</h2>
+        </div>
+
+        <div class="cart-product">
+            <div class="container cart--container">
+                <div class="cart">
+                    <div class="cart--image">
+                        <img src="https://fpt.vn/assets/images/fpt-logo.svg" alt="">
+                    </div>
+                    <h2 class="cart--title">camera title</h2>
+                    <div class="cart--speed">150Mbps</div>
+                    <small class="cart--sale"><s>300.000 vnđ</s></small>
+                    <div class="cart--price">220.000 vnđ</div>
+                    <div class="cart--desc">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                    </div>
+                    
+                    <div class="buy modal">
+                        <a href=""><i class="far fa-heart"></i></a>
+                        <a href=""><i class="fas fa-store"></i></a>
+                        <a href=""><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <div class="cart--image">
+                        <img src="https://fpt.vn/assets/images/fpt-logo.svg" alt="">
+                    </div>
+                    <h2 class="cart--title">gói cước</h2>
+                    <div class="cart--speed">150Mbps</div>
+                    <small class="cart--sale"><s>300.000 vnđ</s></small>
+
+                    <div class="cart--price">220.000 vnđ</div>
+                    <div class="cart--desc">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                    </div>
+
+                    <div class="buy modal">
+                        <a href=""><i class="far fa-heart"></i></a>
+                        <a href=""><i class="fas fa-store"></i></a>
+                        <a href=""><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="cart--image">
+                        <img src="https://fpt.vn/assets/images/fpt-logo.svg" alt="">
+                    </div>
+                    <h2 class="cart--title">gói cước</h2>
+                    <div class="cart--speed">150Mbps</div>
+                    <small class="cart--sale"><s>300.000 vnđ</s></small>
+
+                    <div class="cart--price">220.000 vnđ</div>
+                    <div class="cart--desc">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                    </div>
+                    
+                    <div class="buy modal">
+                        <a href=""><i class="far fa-heart"></i></a>
+                        <a href=""><i class="fas fa-store"></i></a>
+                        <a href=""><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="cart--image">
+                        <img src="https://fpt.vn/assets/images/fpt-logo.svg" alt="">
+                    </div>
+                    <h2 class="cart--title">gói cước</h2>
+                    <div class="cart--speed">150Mbps</div>
+                    <small class="cart--sale"><s>300.000 vnđ</s></small>
+
+                    <div class="cart--price">220.000 vnđ</div>
+                    <div class="cart--desc">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                    </div>
+                    
+                    <div class="buy modal">
+                        <a href=""><i class="far fa-heart"></i></a>
+                        <a href=""><i class="fas fa-store"></i></a>
+                        <a href=""><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- camera -->
+        <div class="subTitle">
+            <h2>Camera</h2>
+        </div>
+        <div class="cart-product">
+            <div class="container cart--container">
+                <div class="cart">
+                    <div class="cart--image--cam">
+                        <img src="./img/1.jpg" alt="">
+                    </div>
+                    <h2 class="cart--title">camera title</h2>
+                    <!-- <div class="cart--speed">150Mbps</div> -->
+                    <small class="cart--sale"><s>300.000 vnđ</s></small>
+                    <div class="cart--price">220.000 vnđ</div>
+                    <div class="cart--desc">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                    </div>
+                    
+                    <div class="buy modal">
+                        <a href=""><i class="far fa-heart"></i></a>
+                        <a href=""><i class="fas fa-store"></i></a>
+                        <a href=""><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <div class="cart--image--cam">
+                        <img src="./img/1.jpg" alt="">
+                    </div>
+                    <h2 class="cart--title">camera title</h2>
+                    <!-- <div class="cart--speed">150Mbps</div> -->
+                    <small class="cart--sale"><s>300.000 vnđ</s></small>
+
+                    <div class="cart--price">220.000 vnđ</div>
+                    <div class="cart--desc">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                    </div>
+
+                    <div class="buy modal">
+                        <a href=""><i class="far fa-heart"></i></a>
+                        <a href=""><i class="fas fa-store"></i></a>
+                        <a href=""><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="cart--image--cam">
+                        <img src="./img/1.jpg" alt="">
+                    </div>
+                    <h2 class="cart--title">camera title</h2>
+                    <!-- <div class="cart--speed">150Mbps</div> -->
+                    <small class="cart--sale"><s>300.000 vnđ</s></small>
+
+                    <div class="cart--price">220.000 vnđ</div>
+                    <div class="cart--desc">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                    </div>
+                    
+                    <div class="buy modal">
+                        <a href=""><i class="far fa-heart"></i></a>
+                        <a href=""><i class="fas fa-store"></i></a>
+                        <a href=""><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="cart">
+                    <div class="cart--image--cam">
+                        <img src="./img/1.jpg" alt="">
+                    </div>
+                    <h2 class="cart--title">camera title</h2>
+                    <!-- <div class="cart--speed">150Mbps</div> -->
+                    <small class="cart--sale"><s>300.000 vnđ</s></small>
+
+                    <div class="cart--price">220.000 vnđ</div>
+                    <div class="cart--desc">
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                        <p> adipisicing elit. Nulla ratione fugiat </p>
+                    </div>
+                    
+                    <div class="buy modal">
+                        <a href=""><i class="far fa-heart"></i></a>
+                        <a href=""><i class="fas fa-store"></i></a>
+                        <a href=""><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="subTitle">
+            <h2>Tính năng</h2>
         </div>
 
         <div class="introduce">
             <div class="container">
-                <h2 id="page-title">Tính năng</h2>
+                
                 <ul class="introduce-list clearfix">
                     <li>Tốc độ download & upload không giới hạn phụ thuộc vào thiết bị lên tới 1 Gbps</li>
                     <li>Trang bị thiết bị hai băng tần mới nhất đạt chuẩn Wifi 5 hoặc Wifi 6</li>

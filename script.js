@@ -1,6 +1,47 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
+
+let bigImg = $("#bigImg");
+
+let smallImg = $$("#smallImg img");
+
+for(let i = 0; i < smallImg.length; i++) {
+    
+    smallImg[i].onmouseover = function() {
+        let srcImg = smallImg[i].getAttribute('src');
+        bigImg.src= srcImg;
+    }
+
+    smallImg[i].onclick = function() {
+        let srcImg = smallImg[i].getAttribute('src');
+        bigImg.src= srcImg;
+    }
+    
+       
+}
+
+
+
+/* navs menu */ 
+const mobile = $("#mobile");
+
+window.onclick = function(event) {
+    if(event.target == mobile) {
+        mobile.style.display = "none";
+    }
+}
+
+/* display navs top */ 
+// let icon = $(".icon");
+// let mobile = (".mobile");
+// console.log(icon);
+
+// icon.onclick = function() {
+//     console.log('ok');
+//     mobile.style.display = 'block';
+// }
+
 let slides = $$("#img-list li");
 
 slideIndex = 0;
@@ -14,25 +55,25 @@ function showSlide() {
     slideIndex++;
     if(slideIndex > slides.length) {slideIndex = 1};
     slides[slideIndex-1].style.display = 'block';
-    setTimeout(showSlide, 4000);
+   
 }
 
 
 // Navbar
-let icon = $(".icon");
+// let icon = $(".icon");
 
-icon.onclick = function() {
-    let x = $("#navtop");
+// icon.onclick = function() {
+//     let x = $("#navtop");
 
-    if(x.className === "nav-list") {
-        x.className += " reponsive";
-    } else {
-        x.className = "nav-list";
-    }
-}
+//     if(x.className === "nav-list") {
+//         x.className += " reponsive";
+//     } else {
+//         x.className = "nav-list";
+//     }
+// }
 
 // Cart product
-
+/*
 let slideCart = 1;
 showCart(slideCart);
 
@@ -47,7 +88,7 @@ function showCart(n) {
     let cartId = $("#cart");
     let cartWidth = cartId.offsetWidth;
     let cartAll = $$(".cart li");
-    console.log(cartAll);
+
 
     if(n > cartAll.length){slideCart = 1}
     if(n < 1) {slideCart = cartAll.length}
@@ -61,7 +102,7 @@ function showCart(n) {
     cartAll[slideCart-1].style.display = 'block';
 }
 
-
+*/
 
 // onscroll not ok
 // window.onscroll = function() {myFunction()}
