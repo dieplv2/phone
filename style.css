@@ -27,6 +27,10 @@ a {
     gap: 1em;
 }
 
+.nav-list .active {
+    color: orangered;
+}
+
 /* nav Css */
 .slidebar {
     width: 100%;
@@ -460,11 +464,9 @@ label {
 .footer {
     padding: 20px 0;
     text-align: center;
-    background-color: #1111;
 }
 
 .footer-list {
-    background-color: #1111;
     padding: 20px;
 }
 
