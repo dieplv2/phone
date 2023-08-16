@@ -5,16 +5,17 @@
     height: 100%;
     top: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(222, 77, 00, 0.9);
     z-index: 1;
     padding-top: 60px;
+    transition: 0.5s;
 }
 
 .mobile a {
     display: block;
     padding: 8px 12px;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.1em;
     color: #fff;
 }
 
@@ -29,6 +30,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .cat {
+        width: 100%;
+        margin-bottom: 20px;
+    }
     .cart {
         width: 100%;
         margin-bottom: 40px;
@@ -36,6 +41,9 @@
     }
     .modal {
         display: block;
+    }
+    .buy a {
+        color: #000;
     }
 
     /* Dettail */
@@ -73,6 +81,7 @@
 }
 
 @media only screen and (max-width: 990px) and (min-width: 768px) {
+
     .cart {
         width: 49%;
         margin-bottom: 40px;
